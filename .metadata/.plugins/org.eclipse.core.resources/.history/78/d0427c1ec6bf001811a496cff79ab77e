@@ -1,0 +1,26 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class Producer {
+
+	
+	private Queue<Integer> queue ;
+	/**
+	 * @param args
+	 */
+	public void put(Integer number){
+		
+		queue.add(number);
+		notify();
+	}
+
+}

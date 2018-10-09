@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class ProducerConsumerRunner {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Thread producer = new Thread( new Producer());
+		Thread consumer = new Thread( new Consumer());
+		
+		Queue sharedQ = new LinkedList();
+		
+		
+	}
+
+}

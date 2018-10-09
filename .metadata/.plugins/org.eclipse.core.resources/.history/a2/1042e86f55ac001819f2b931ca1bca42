@@ -1,0 +1,33 @@
+package ramesh.samples.array;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+
+public class MissingNumberFromSequence {
+
+	public static void main(String args[]){
+		
+		Scanner in = new Scanner(System.in);
+		Queue<Integer> queue = new LinkedList<Integer>();
+		Stack<Integer> st2 = new Stack<Integer>();
+		System.out.println("Enter input array1 sequence sep by space");
+		String numbers[] = in.nextLine().split(" ");
+		for (int i = 0; i < numbers.length; i++) {
+			queue.add(Integer.parseInt(numbers[i]));
+		}
+		
+		System.out.println("Enter input array2 sequence sep by space");
+		String numbers1[] = in.nextLine().split(" ");
+	for (int i = 0; i < numbers1.length; i++) {
+			if(queue.peek()==Integer.parseInt(numbers[i])){
+				queue.remove();
+				continue;
+			}else {
+				System.out.println("Missing number is "+ queue.remove());
+			}
+		}
+		
+	}
+}

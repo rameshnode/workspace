@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class Producer {
+
+	
+	private Queue<Integer> queue ;
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

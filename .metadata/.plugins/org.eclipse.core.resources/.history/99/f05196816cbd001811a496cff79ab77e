@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package ramesh.samples.threads.deadlock;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class DeadLock {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	
+
+}
+class PrinterThread extends Thread {
+	public void run(){
+		System.out.println(" Thread "+ Thread.currentThread().getName() +" started processing");
+	}
+}

@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package ramesh.samples.ds;
+
+import java.util.LinkedList;
+import java.util.Stack;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class QWithStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+class Q{
+	
+	Stack<Integer> stack = new Stack<Integer>();
+}

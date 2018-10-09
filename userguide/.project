@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>userguide</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>classes</name>
+			<type>2</type>
+			<location>C:/axis2-1.7.7/samples/userguide/build/classes</location>
+		</link>
+		<link>
+			<name>userguide.jar</name>
+			<type>2</type>
+			<location>C:/axis2-1.7.7/samples/userguide/build/userguide.jar</location>
+		</link>
+	</linkedResources>
+</projectDescription>

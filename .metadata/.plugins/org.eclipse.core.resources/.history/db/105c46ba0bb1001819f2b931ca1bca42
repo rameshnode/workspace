@@ -1,0 +1,56 @@
+/**
+ * 
+ */
+package ramesh.samples.ds;
+
+import java.util.LinkedList;
+import java.util.Stack;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class QWithStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Q<Integer> numbers = new Q<Integer>();
+		
+		numbers.enqueue(1);
+		numbers.enqueue(2);
+		numbers.enqueue(3);
+		numbers.enqueue(4);
+	}
+
+}
+class Q<T>{
+	
+	Stack<T> stack = new Stack<T>();
+	
+	public T enqueue(T item){
+		return stack.push(item);
+		
+	}
+	public void dequeue(){
+		 getFirst(stack);
+	}
+	
+	public void getFirst(Stack<T> stack ){
+		
+		T t = null ;
+		if(!stack.isEmpty()){
+			 t = stack.pop();
+			 getFirst(stack); 
+			 
+			 
+		}else {
+			System.out.println(" FIRST ELEMENT "+ t);
+		}
+		stack.push(t);
+		
+	}
+}

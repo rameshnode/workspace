@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ * 
+ */
+public class Consumer {
+
+	private Queue<Integer> queue;
+
+	public Integer get() {
+		if (queue.isEmpty()) {
+			try {
+				System.out.println("Consumer waiting for work");
+				wait();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return queue.remove();
+	}
+}

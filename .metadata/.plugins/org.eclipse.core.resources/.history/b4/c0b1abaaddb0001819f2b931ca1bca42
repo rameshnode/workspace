@@ -1,0 +1,18 @@
+package ramesh.samples.recursive;
+
+public class NQueens {
+
+	public static void main(String args[]){
+		
+		int N = 4;
+		boolean board[][] = new boolean[N][N];
+	}
+	
+	public void placeQueen(int x,int y, boolean[][] board){
+		
+	}
+	
+	public void isSafe(int x,int y, boolean[][] board){
+		
+	}
+}

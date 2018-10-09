@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+package ramesh.inteview.samples.collections;
+
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.Stack;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class ListAsQAndStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Stack<Integer> stack = new Vector<Integer>();
+		
+		stack.add(1);
+		stack.add(2);
+		stack.add(3);
+		stack.add(4);
+		System.out.println(" S " + stack.remove());
+		Queue<Integer> queue = new LinkedList<Integer>();
+		
+		queue.add(1);
+		queue.add(2);
+		queue.add(3);
+		queue.add(4);
+		
+		System.out.println(" Q " + queue.remove());
+//		for (Integer integer : queue) {
+//			System.out.println("Q " + queue.remove());
+//		}
+
+		//Stack<Integer> stack = new LinkedList<Integer>();
+		
+		
+
+	}
+
+}

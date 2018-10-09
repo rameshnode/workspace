@@ -1,0 +1,36 @@
+/**
+ * 
+ */
+package ramesh.samples.recursive;
+
+import java.util.HashSet;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class StringIntoDictionaryWords {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	public static void recursiceDictionaryWords(String string, HashSet<String> dictionary) {
+		// TODO Auto-generated method stub
+		
+		
+		if(string.isEmpty()){
+			System.out.println(string);
+		}
+		if(dictionary.contains(string)){
+			System.out.println(string);
+			recursiceDictionaryWords(string.substring(0,string.length()),dictionary);
+		}
+
+	}
+
+}

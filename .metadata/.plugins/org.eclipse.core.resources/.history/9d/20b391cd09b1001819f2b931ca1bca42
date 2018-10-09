@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package ramesh.samples.ds;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class QWithStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,68 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+import java.util.Iterator;
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ * 
+ */
+public class Consumer implements Runnable {
+
+	private Queue<Integer> queue;
+
+	public Consumer(Queue sharedQ) {
+		// TODO Auto-generated constructor stub
+		queue = sharedQ;
+	}
+
+	public Integer get() {
+		while (queue.isEmpty()) {
+			try {
+				System.out.println("Consumer waiting for work");
+				wait();
+				System.out.println(" Notified ");
+				while (!queue.isEmpty()) {
+					System.out
+							.println(" Consumer processing " + queue.remove());
+				}
+				Thread.sleep(2000);
+				System.out.println("I consumed");
+				notify();
+
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return queue.remove();
+	}
+
+	@Override
+	public void run() {
+
+		synchronized (queue) {
+			while (!queue.isEmpty()) {
+				try {
+					System.out.println("Consumer waiting for work");
+					queue.wait();
+					System.out.println(" Notified ");
+					while (!queue.isEmpty()) {
+						System.out.println(" Consumer processing "
+								+ queue.remove());
+					}
+					Thread.sleep(2000);
+					System.out.println("I consumed");
+					queue.notify();
+
+				} catch (InterruptedException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+}

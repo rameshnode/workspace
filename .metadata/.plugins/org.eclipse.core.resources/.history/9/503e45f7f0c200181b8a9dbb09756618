@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package ramesh.inteview.samples.collections;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class ListAsQAndStack {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

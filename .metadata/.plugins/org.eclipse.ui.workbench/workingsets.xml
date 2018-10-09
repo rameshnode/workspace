@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1519740066551_1" label="java_first_jaxws" name="java_first_jaxws">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/java_first_jaxws" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1519740438769_2" label="samples" name="samples">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxws-interop" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/https-sample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxws-addressbook" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxws-version" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/httpsService" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxws-calculator" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jms-sample" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/samples" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/httpsClient" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jaxws-samples" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jmsService" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1519740013624_0" label="Window Working Set" name="Aggregate for window 1519740013623"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1528180244967_3" label="Window Working Set" name="Aggregate for window 1528180244967"/>
+</workingSetManager>

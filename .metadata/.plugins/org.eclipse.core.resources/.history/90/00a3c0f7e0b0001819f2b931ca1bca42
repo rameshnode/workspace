@@ -1,0 +1,36 @@
+package ramesh.samples.recursive;
+
+public class NQueens {
+
+	public static void main(String args[]){
+		
+		int N = 4;
+		boolean board[][] = new boolean[N][N];
+		
+		showBoard(board);
+	}
+	
+	public static void placeQueen(int x,int y, boolean[][] board){
+		
+	}
+	
+	public static void isSafe(int row,int col, boolean[][] board){
+		// if any row has true value in the board
+		for (int i = 0; i < board.length; i++) {
+			if(board[i][0]&& i==row){
+				System.out.println("IN SAME ROW !! NOT SAFE");
+			}
+		}
+		
+	}
+	
+	public static void showBoard(boolean[][] board){
+		for (int i = 0; i < board.length; i++) {
+			for (int j = 0; j < board.length; j++) {
+				System.out.print(board[i][j]+ " ");
+			}
+			System.out.println();
+		}
+		
+	}
+}

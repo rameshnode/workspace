@@ -1,0 +1,15 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+import java.util.List;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class Consumer {
+
+	List<Integer> queue ;
+}

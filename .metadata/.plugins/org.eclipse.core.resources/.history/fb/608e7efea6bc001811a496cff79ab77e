@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class JoinExample {
+
+	public static void main(String args[]){
+		
+	}
+	
+	Runnable t1 = new Runnable(){
+		public void run(){
+			System.out.println("Thread 1");
+		}
+	};
+	
+	Runnable t2 = new Runnable(){
+		public void run(){
+			System.out.println("Thread 2");
+		}
+	};
+	
+	Runnable t3 = new Runnable(){
+		public void run(){
+			System.out.println("Thread 3");
+		}
+	};
+}

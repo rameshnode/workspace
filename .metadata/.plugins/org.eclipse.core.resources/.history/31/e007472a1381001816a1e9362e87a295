@@ -1,0 +1,74 @@
+/**
+ * 
+ */
+package ramesh.inteview.samples;
+
+import java.util.Stack;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class StringInteger {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println(stringToNumber("00010"));
+		
+		//altBitsInNumber(7);
+		int n=32;
+		Stack<Integer> stack = new Stack<Integer>();
+		while(n>0){
+			
+			if(stack.isEmpty()){
+				System.out.println(n%2);
+				stack.push(n%2);
+			}else{
+				int remainder = n%2;
+				System.out.println(remainder);
+				if( !(remainder!=stack.pop())){
+					stack.push(remainder);
+					System.out.println("found consquent same bits");
+					break;
+				}
+			}
+			n/=2;
+		}
+		if(stack.isEmpty()){
+			System.out.println("havning alt bits");
+		}
+
+	}
+	
+	public static int stringToNumber(String string){
+		
+		
+		char letters[] = string.toCharArray();
+		
+		int value = 0;
+		for (int i = 0; i < letters.length; i++) {
+			System.out.println(letters[i] );
+			value = (value * 10) + ( letters[i] -48);
+			System.out.println("value ->" +value);
+		}
+		return value;
+	}
+
+	
+	public static void altBitsInNumber(int n){
+		if(n==0){
+			System.out.print("0");
+		}else if(n==1){
+			System.out.print("1");
+		}
+		else {
+			
+			  altBitsInNumber(n/2);
+			  System.out.print(n%2);
+		}
+					
+	}
+}

@@ -1,0 +1,16 @@
+/**
+ * 
+ */
+package ramesh.samples.threads;
+
+
+import java.util.Queue;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class Consumer {
+
+	private Queue<Integer> queue ;
+}

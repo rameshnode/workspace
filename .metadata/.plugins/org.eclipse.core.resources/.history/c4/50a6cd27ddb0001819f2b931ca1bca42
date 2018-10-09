@@ -1,0 +1,5 @@
+package ramesh.samples.recursive;
+
+public class NQueens {
+
+}

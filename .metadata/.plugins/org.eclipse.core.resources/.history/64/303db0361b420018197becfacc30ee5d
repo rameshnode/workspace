@@ -1,0 +1,28 @@
+/**
+ * 
+ */
+package unity.media.group.dms;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class ImportDocuments {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/**
+		 *  Document 
+		 *  	Correspondency
+		 *  	Invoice 
+		 *  
+		 */
+		
+		
+	}
+
+}

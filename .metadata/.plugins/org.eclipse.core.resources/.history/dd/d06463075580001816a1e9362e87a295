@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package ramesh.inteview.samples;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class StringInteger {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package ramesh.samples.recursive;
+
+/**
+ * @author ramesh.kandula
+ *
+ */
+public class StandfordPermute {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println(" Permute ");
+		permute("1234");
+	}
+	
+	public static void permute(String string){
+		permuteHelper("",string);
+	}
+	
+	public static void permuteHelper(String sofar, String choosen){
+		if(sofar.isEmpty()){
+			System.out.println(choosen);
+		}else {
+			for (int i = 0; i < sofar.length(); i++) {
+				 
+				sofar += sofar.charAt(i);
+				choosen = sofar.substring(0, i) + sofar.substring(i+1, sofar.length());
+				permuteHelper(sofar,choosen);
+				//sofar=sofar+sofar.charAt(i)+choosen;
+			}
+		}
+	}
+
+}
